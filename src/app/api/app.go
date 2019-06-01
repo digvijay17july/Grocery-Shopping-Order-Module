@@ -2,7 +2,7 @@ package api
 
 import (
 	"Grocery-Shopping-Order-Module/src/app/handler"
-	"Grocery-Shopping-User-Module/src/app/model"
+	"Grocery-Shopping-Order-Module/src/app/model"
 	"fmt"
 	"github.com/gorilla/mux"
 	"github.com/jinzhu/gorm"
@@ -37,9 +37,7 @@ func (a *App) Initialize(config *Config) {
 }
 // DBMigrate will create and migrate the tables, and then make the some relationships if necessary
 func DBMigrate(db *gorm.DB) *gorm.DB {
-	db.AutoMigrate(&model.User{})
-	db.AutoMigrate(&model.MobileNumber{})
-	db.AutoMigrate(&model.Address{})
+	db.AutoMigrate(&model.Order{})
 	return db
 }
 func (a *App) setRouters(){
