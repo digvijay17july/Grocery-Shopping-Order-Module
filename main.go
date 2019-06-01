@@ -7,7 +7,7 @@ import (
 	"os"
 )
 func main() {
-	fmt.Println("Starting User Module.... ")
+	fmt.Println("Starting Order Module.... ")
 	config := api.GetConfig()
 
 	app := &api.App{}
@@ -17,5 +17,5 @@ func main() {
 	fmt.Println("Port No. is :"+port)
 	app.Run(":"+port)
 
-	fmt.Println("Started User Module.... ")
+	fmt.Println("Started Order Module.... ")
 }
