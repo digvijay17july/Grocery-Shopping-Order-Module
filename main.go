@@ -1,7 +1,7 @@
 package main
 
 import (
-	"Grocery-Shopping-User-Module/src/app/api"
+	"Grocery-Shopping-Order-Module/src/app/api"
 	"fmt"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 	"os"
